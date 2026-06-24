@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Art Studio Festina — 채우기 전에, 먼저 꺼냅니다</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;900&family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&family=Gaegu:wght@400&display=swap" rel="stylesheet">
 <style>
   :root{
     --paper:#F7F5EF;
@@ -20,9 +20,9 @@
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
   body{
-    font-family:'Noto Sans KR',sans-serif;font-weight:300;
+    font-family:'Noto Sans KR',sans-serif;font-weight:400;
     background:var(--paper);color:var(--ink);
-    line-height:1.85;font-size:15px;overflow-x:hidden;
+    line-height:1.85;font-size:15.5px;overflow-x:hidden;
     -webkit-font-smoothing:antialiased;
   }
   ::selection{background:rgba(249,190,30,.30)}
@@ -55,7 +55,7 @@
     display:flex;justify-content:space-between;align-items:center;
   }
   .brand{
-    font-weight:900;font-size:.95rem;letter-spacing:.06em;text-decoration:none;
+    font-weight:700;font-size:.95rem;letter-spacing:.06em;text-decoration:none;
     font-family:'Noto Sans KR',sans-serif;
   }
   .brand i{font-style:normal;color:var(--vermilion)}
@@ -84,26 +84,27 @@
   .hero-label::before{content:"";width:34px;height:2px;background:var(--ink)}
   .hero h1{
     position:relative;z-index:1;
-    line-height:1.16;letter-spacing:-.03em;
-    font-size:clamp(3rem,10.5vw,8.2rem);
+    line-height:1.2;letter-spacing:-.02em;
+    font-size:clamp(2.8rem,9.5vw,7.4rem);
   }
-  .hero h1 .l1{font-family:'Gowun Batang',serif;font-weight:400;display:block}
+  .hero h1 .l1{font-family:'Gowun Batang',serif;font-weight:400;display:block;margin-bottom:.08em}
   .hero h1 .l2{
-    font-weight:900;display:inline-block;transform:rotate(-1.6deg);
+    font-family:'Gowun Batang',serif;font-weight:700;display:inline-block;
     margin-top:.04em;position:relative;
   }
   .hero h1 .l2 .circ{
-    position:absolute;left:-4%;top:-12%;width:108%;height:124%;overflow:visible;
+    position:absolute;left:-5%;top:-8%;width:110%;height:118%;overflow:visible;
   }
   .hero h1 .l2 .circ path{fill:none;stroke:var(--ochre);stroke-width:6;stroke-linecap:round}
   .hero-sub{
-    margin-top:46px;max-width:480px;font-size:.97rem;line-height:2;
-    position:relative;z-index:1;
+    margin-top:46px;max-width:520px;font-size:1.08rem;line-height:1.95;
+    position:relative;z-index:1;color:#2A2C2A;
   }
   .hero-sub b{font-weight:500;box-shadow:inset 0 -0.5em 0 rgba(249,190,30,.40)}
   .hero-note{
-    margin-top:30px;font-family:'Gaegu',cursive;font-size:1.25rem;color:var(--cobalt);
-    transform:rotate(-1deg);display:inline-flex;align-items:center;gap:10px;
+    margin-top:30px;font-family:'Noto Sans KR',sans-serif;font-weight:500;
+    font-size:1rem;color:var(--cobalt);letter-spacing:-.01em;
+    display:inline-flex;align-items:center;gap:10px;
   }
   .hero-note svg{width:46px;height:auto;overflow:visible}
   .hero-note svg path{fill:none;stroke:var(--cobalt);stroke-width:2.4;stroke-linecap:round}
@@ -118,7 +119,7 @@
     text-decoration:none;
   }
   .badge .ring-wrap{position:absolute;inset:0}
-  .badge .ring-wrap svg{width:100%;height:100%;animation:spin 22s linear infinite}
+  .badge .ring-wrap svg{width:100%;height:100%}
   @keyframes spin{to{transform:rotate(360deg)}}
   .badge text{
     font-size:11.5px;letter-spacing:3.4px;fill:var(--ink);
@@ -129,7 +130,7 @@
     transition:transform .35s ease;
   }
   .badge .center img{width:54px;height:auto;display:block}
-  .badge:hover .center{transform:scale(1.18) rotate(18deg)}
+  .badge:hover .center{transform:scale(1.08)}
   @media(max-width:880px){
     .badge{width:84px;height:84px;bottom:18px;right:18px}
     .badge text{font-size:13.5px;letter-spacing:2.6px}
@@ -175,18 +176,18 @@
     font-size:clamp(1.7rem,4.4vw,3.1rem);line-height:1.7;letter-spacing:-.015em;
     max-width:900px;font-weight:300;
   }
-  .statement p.big .s{font-family:'Gowun Batang',serif;font-weight:700}
-  .statement p.big .h{font-weight:900}
+  .statement p.big .s{font-family:'Gowun Batang',serif;font-weight:700;color:var(--cobalt)}
+  .statement p.big .h{font-family:'Gowun Batang',serif;font-weight:700}
   .statement p.big .u{position:relative;white-space:nowrap}
   .statement p.big .u svg{
     position:absolute;left:0;right:0;bottom:-.18em;width:100%;height:.32em;overflow:visible;
   }
   .statement p.big .u svg path{fill:none;stroke:var(--ochre);stroke-width:6;stroke-linecap:round}
   .statement .side-note{
-    margin-top:44px;font-family:'Gaegu',cursive;font-size:1.3rem;color:var(--grey);
-    transform:rotate(-.8deg);
+    margin-top:44px;font-family:'Noto Sans KR',sans-serif;font-weight:500;
+    font-size:1.05rem;color:var(--grey);letter-spacing:-.01em;
   }
-  .statement .side-note em{font-style:normal;color:var(--vermilion)}
+  .statement .side-note em{font-style:normal;color:var(--cobalt)}
 
   /* ---------- 브랜드 스토리 ---------- */
   .story{padding:40px 0 150px;position:relative;overflow:hidden}
@@ -230,15 +231,15 @@
     text-align:center;margin:50px 0;color:var(--ink);
   }
   .story-body .key .hl{box-shadow:inset 0 -0.42em 0 rgba(249,190,30,.4)}
-  .story-body .small-emph{display:block;font-size:.92em;color:var(--teal);margin-top:6px}
+  .story-body .small-emph{display:block;font-size:.92em;color:var(--cobalt);margin-top:6px}
   /* 마무리 — 슬로건 회귀 */
   .story-close{
     text-align:center;margin-top:80px;padding-top:64px;
     border-top:1px solid var(--hairline);
   }
   .story-close .hand{
-    font-family:'Gaegu',cursive;font-size:1.4rem;color:var(--grey);
-    transform:rotate(-1deg);display:inline-block;margin-bottom:18px;
+    font-family:'Noto Sans KR',sans-serif;font-weight:500;font-size:1.05rem;
+    color:var(--grey);letter-spacing:.02em;display:inline-block;margin-bottom:18px;
   }
   .story-close .slogan{
     font-family:'Gowun Batang',serif;font-weight:700;
@@ -257,7 +258,7 @@
     display:flex;align-items:baseline;gap:22px;margin-bottom:70px;flex-wrap:wrap;
   }
   .sec-title h2{
-    font-size:clamp(2.2rem,6vw,4rem);font-weight:900;letter-spacing:-.03em;line-height:1.1;
+    font-size:clamp(2.2rem,6vw,4rem);font-weight:700;letter-spacing:-.03em;line-height:1.1;
   }
   .sec-title .count{
     font-family:'Gowun Batang',serif;font-size:1.1rem;color:var(--grey);
@@ -304,14 +305,14 @@
   .note:nth-child(4) .tape{background:rgba(30,92,84,.3);transform:translateX(-50%) rotate(1.5deg)}
   .note .num{
     position:absolute;top:18px;right:24px;z-index:2;
-    font-weight:900;font-size:3.4rem;line-height:1;color:transparent;
+    font-weight:700;font-size:3.4rem;line-height:1;color:transparent;
     -webkit-text-stroke:1.8px rgba(255,254,250,.95);
     transition:color .4s,-webkit-text-stroke .4s;
   }
   .note:hover .num{color:var(--vermilion);-webkit-text-stroke:0px transparent}
   .note:nth-child(2):hover .num{color:var(--cobalt)}
   .note:nth-child(3):hover .num{color:var(--ochre)}
-  .note:nth-child(4):hover .num{color:var(--teal)}
+  .note:nth-child(4):hover .num{color:var(--cobalt)}
   .note .who{
     font-size:.68rem;letter-spacing:.3em;font-weight:500;color:var(--grey);
     text-transform:uppercase;
@@ -322,13 +323,9 @@
   }
   .note .sub{font-size:.84rem;color:var(--grey);margin-bottom:22px}
   .note .q{
-    font-family:'Gaegu',cursive;font-size:1.3rem;line-height:1.5;
-    margin-bottom:16px;
+    font-family:'Gowun Batang',serif;font-weight:700;font-size:1.15rem;line-height:1.6;
+    margin-bottom:16px;color:var(--cobalt);
   }
-  .note:nth-child(1) .q{color:var(--vermilion)}
-  .note:nth-child(2) .q{color:var(--cobalt)}
-  .note:nth-child(3) .q{color:#C28425}
-  .note:nth-child(4) .q{color:var(--teal)}
   .note p.desc{font-size:.92rem;line-height:2}
 
   /* ---------- 인용 ---------- */
@@ -368,10 +365,10 @@
   }
   .polaroid .tape{top:-15px;background:rgba(229,163,60,.4)}
   .about h2{
-    font-size:clamp(1.7rem,3.6vw,2.5rem);font-weight:900;letter-spacing:-.02em;
+    font-size:clamp(1.7rem,3.6vw,2.5rem);font-weight:700;letter-spacing:-.02em;
     line-height:1.5;margin-bottom:28px;
   }
-  .about h2 .s{font-family:'Gowun Batang',serif;font-weight:700;color:var(--teal)}
+  .about h2 .s{font-family:'Gowun Batang',serif;font-weight:700;color:var(--cobalt)}
   .about p.body{max-width:560px;font-size:.96rem;margin-bottom:18px}
   .creds{margin-top:42px;max-width:580px}
   .creds div{
@@ -404,14 +401,14 @@
   .book p{margin-top:18px;max-width:560px;font-size:.93rem;color:var(--grey)}
   .book .hand-line{
     font-family:'Gaegu',cursive;font-size:1.6rem;color:var(--cobalt);
-    transform:rotate(-2deg);white-space:nowrap;
+    white-space:nowrap;
   }
 
   /* ---------- CONTACT ---------- */
   .contact{padding:0 0 140px}
   .contact .big-link{
     display:inline-block;text-decoration:none;position:relative;
-    font-weight:900;letter-spacing:-.03em;
+    font-weight:700;letter-spacing:-.03em;
     font-size:clamp(2.4rem,8vw,5.6rem);line-height:1.25;
   }
   .contact .big-link .scrib{
@@ -481,16 +478,13 @@
       </span>
     </h1>
     <p class="hero-sub rv">
-      그림은 가르치는 도구가 아니라, <b>꺼내는 도구</b>입니다.<br>
+      그림은 가르치는 도구가 아니라,<br>
+      <b>꺼내는 도구</b>입니다.<br><br>
       아이의 이야기도, 엄마의 마음도 —<br>
-      영국 국가공인 미술심리 전문가가 창원에서 직접 만납니다.
+      영국 국가공인 미술심리 전문가가<br>
+      창원에서 직접 만납니다.
     </p>
-    <p class="hero-note rv">
-      <svg class="draw" viewBox="0 0 50 26" aria-hidden="true">
-        <path d="M2 20 C 16 22, 30 16, 42 8 M34 6 L 44 7 L 41 16"/>
-      </svg>
-      붓을 들면, 아이가 먼저 말합니다
-    </p>
+    <p class="hero-note rv">붓을 들면, 아이가 먼저 말합니다.</p>
   </div>
 
   <figure class="hero-photo rv">
@@ -521,10 +515,10 @@
   </svg>
   <div class="wrap">
     <p class="big rv">
-      하고 싶은 게 <span class="h">없는 게 아닙니다.</span><br>
-      아직 자기 목소리를
-      <span class="u">꺼내본 적이 없을 뿐<svg class="draw" viewBox="0 0 300 24" preserveAspectRatio="none" aria-hidden="true"><path d="M4 14 C 80 6, 200 22, 296 10"/></svg></span>입니다.<br>
-      <span class="s">페스티나는 가르치기 전에, 먼저 묻는 곳입니다.</span>
+      <span class="h">하고 싶은 게 없는 게 아닙니다.</span><br>
+      아직 자기 목소리를<br>
+      <span class="u">꺼내본 적이 없을 뿐<svg class="draw" viewBox="0 0 300 24" preserveAspectRatio="none" aria-hidden="true"><path d="M4 14 C 80 6, 200 22, 296 10"/></svg></span>입니다.<br><br>
+      <span class="s">페스티나는 가르치기 전에,<br>먼저 묻는 곳입니다.</span>
     </p>
     <p class="side-note rv">→ 미술학원도, 상담소도 아닌 <em>제3의 자리</em>예요</p>
   </div>
@@ -544,13 +538,27 @@
     <div class="story-body">
       <p class="lead rv">나는 가르치는 사람이 아니라, 발견을 돕는 사람입니다.</p>
 
-      <p class="rv">저에게 그림은 잘 그리기 위한 도구가 아닙니다. 마음속에 이미 존재하는 것을 꺼내는 도구입니다. 자신이 무엇을 좋아하는지, 무엇을 원하는지, 무엇이 자신을 살아있게 하는지 — 그 발견을 돕는 일. 그것이 제가 페스티나에서 하는 단 한 가지 일입니다.</p>
+      <p class="rv">저에게 그림은 잘 그리기 위한 도구가 아닙니다.<br>
+        마음속에 이미 존재하는 것을 꺼내는 도구입니다.<br><br>
+        자신이 무엇을 좋아하는지, 무엇을 원하는지,<br>
+        무엇이 자신을 살아있게 하는지 —<br>
+        그 발견을 돕는 일.<br>
+        그것이 제가 페스티나에서 하는 단 한 가지 일입니다.</p>
 
-      <p class="rv">오랫동안 저는 아이들과 이 일을 해왔습니다. 관심사를 찾고, 생각을 확장하고, 자신만의 언어를 발견하도록. 몇 개월에 걸쳐 탐구를 지켜보고, 전시를 열고, 아이가 스스로를 표현하는 순간을 함께 만났습니다.</p>
+      <p class="rv">오랫동안 저는 아이들과 이 일을 해왔습니다.<br>
+        관심사를 찾고, 생각을 확장하고,<br>
+        자신만의 언어를 발견하도록.<br><br>
+        몇 개월에 걸쳐 탐구를 지켜보고, 전시를 열고,<br>
+        아이가 스스로를 표현하는 순간을 함께 만났습니다.</p>
 
-      <p class="rv">그러다 알게 되었습니다. 발견이 필요한 사람은 아이만이 아니라는 것을.</p>
+      <p class="rv">그러다 알게 되었습니다.<br>
+        발견이 필요한 사람은 아이만이 아니라는 것을.</p>
 
-      <p class="rv">수업이 끝나고 아이가 돌아간 자리에는 엄마가 있었습니다. 그리고 많은 엄마들이, 아이의 꿈은 또렷하게 말하면서도 정작 자신의 마음 앞에서는 머뭇거렸습니다.</p>
+      <p class="rv">수업이 끝나고 아이가 돌아간 자리에는<br>
+        엄마가 있었습니다.<br><br>
+        그리고 많은 엄마들이,<br>
+        아이의 꿈은 또렷하게 말하면서도<br>
+        정작 자신의 마음 앞에서는 머뭇거렸습니다.</p>
 
       <div class="voices rv">
         <p>"저도 해보고 싶은 게 있어요."</p>
@@ -558,17 +566,30 @@
         <p>"제가 뭘 좋아하는지 잘 모르겠어요."</p>
       </div>
 
-      <p class="rv">아이가 잃어버린 목소리와, 엄마가 미뤄둔 목소리는 다르지 않았습니다.</p>
+      <p class="rv">아이가 잃어버린 목소리와,<br>
+        엄마가 미뤄둔 목소리는 다르지 않았습니다.</p>
 
       <p class="key rv">필요한 것은 <span class="hl">같은 힘</span>이었습니다.
         <span class="small-emph">자신의 감정을 이해하고, 무엇이 자신을 살아있게 하는지 알아가는 힘.</span>
       </p>
 
-      <p class="rv">그래서 페스티나는 아이의 발견에서 멈추지 않습니다. 같은 도구로, 엄마의 마음도 함께 꺼냅니다. 아이의 자기이해와 엄마의 자기이해는 결국 하나로 이어져 있으니까요.</p>
+      <p class="rv">그래서 페스티나는 아이의 발견에서 멈추지 않습니다.<br>
+        같은 도구로, 엄마의 마음도 함께 꺼냅니다.<br><br>
+        아이의 자기이해와 엄마의 자기이해는<br>
+        결국 하나로 이어져 있으니까요.</p>
 
-      <p class="rv">이 믿음은 저 자신에게서 시작되었습니다. 미술을 좋아한다고 여겼던 제 출발도, 돌아보면 잘하고 싶고 인정받고 싶은 마음이었습니다. 무엇을 진짜 원하는지 알고 싶어 미술심리치료를 공부했고, 영국에서 자기 탐구의 시간을 지나 돌아왔습니다.</p>
+      <p class="rv">이 믿음은 저 자신에게서 시작되었습니다.<br>
+        미술을 좋아한다고 여겼던 제 출발도,<br>
+        돌아보면 잘하고 싶고 인정받고 싶은 마음이었습니다.<br><br>
+        무엇을 진짜 원하는지 알고 싶어 미술심리치료를 공부했고,<br>
+        영국에서 자기 탐구의 시간을 지나 돌아왔습니다.</p>
 
-      <p class="rv">다시 선 교육 현장에서 저는 같은 풍경을 보았습니다 — 자기 안의 목소리보다 주변의 목소리를 따라야 했던, 힘 빠진 아이들을요. 우리는 언젠가 "내가 무엇을 원하는가"라는 질문으로 돌아오게 됩니다. 그렇다면 그 발견을, 미루지 않고 지금 시작하기로 했습니다.</p>
+      <p class="rv">다시 선 교육 현장에서 저는 같은 풍경을 보았습니다 —<br>
+        자기 안의 목소리보다 주변의 목소리를 따라야 했던,<br>
+        힘 빠진 아이들을요.<br><br>
+        우리는 언젠가 "내가 무엇을 원하는가"라는<br>
+        질문으로 돌아오게 됩니다.<br>
+        그렇다면 그 발견을, 미루지 않고 지금 시작하기로 했습니다.</p>
 
       <div class="story-close rv">
         <span class="hand">그래서 오늘도,</span>
